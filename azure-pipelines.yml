@@ -3,15 +3,14 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger:
-- main
+trigger: none
 
 pool:
   name: Default
 
 variables:
-  rgname:"ssrg"
-  location:"westindia"
+  rgname: "ssrg"
+  location: "westindia"
 
 steps:
 - task: AzurePowerShell@5
